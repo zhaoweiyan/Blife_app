@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp14">
+
+        <!--   <ImageView
+               android:id="@+id/iv_user_header"
+               android:layout_width="@dimen/dp41"
+               android:layout_height="@dimen/dp41"
+               android:scaleType="fitXY"
+               android:src="@mipmap/welcome" />-->
+        <com.blife.blife_app.tools.view.CircleImageView
+            android:id="@+id/iv_user_header"
+
+            android:layout_width="@dimen/dp44"
+            android:layout_height="@dimen/dp44"
+            android:src="@mipmap/welcome"
+            app:border_color="@color/colorgray"
+            app:border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginLeft="@dimen/dp14"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp3"
+            android:paddingTop="@dimen/dp3">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="美猴王"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="15880114616"
+                android:textColor="@color/colorLoginforgetPassword"
+                android:textSize="@dimen/sp_13" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp44"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp3"
+            android:paddingTop="@dimen/dp3">
+
+            <TextView
+                android:id="@+id/tv_user_bonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="580元"
+                android:textColor="@color/color_common"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/creattime"
+                android:textColor="@color/color_user_agreement"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_main_backround" />
+
+
+</LinearLayout>

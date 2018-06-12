@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_backround"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_topbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/bonus_details_report_cause"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_15" />
+
+        <GridView
+            android:id="@+id/gridview_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="13dp" />
+
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/selector_button_red_round"
+            android:text="@string/bonus_details_submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_20" />
+
+    </LinearLayout>
+
+</FrameLayout>

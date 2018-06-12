@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_backround"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_topbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_addpic_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/uploadadv_addadvpic" />
+
+                    <ImageView
+                        android:id="@+id/iv_addpic_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/uploadadv_addadvpic" />
+
+                    <ImageView
+                        android:id="@+id/iv_addpic_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/uploadadv_addadvpic" />
+
+                    <ImageView
+                        android:id="@+id/iv_addpic_d"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/uploadadv_nopic" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:drawableLeft="@mipmap/uploadadv_titleicon"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/uploadadv_business_name"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top"
+                            android:text="*"
+                            android:textColor="@color/colorRedLoginNormal" />
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+
+                    <EditText
+                        android:id="@+id/et_adv_businessname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorWhite"
+                        android:hint="@string/uploadadv_hint_business_name"
+                        android:maxLength="18"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLoginforgetPassword"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:drawableLeft="@mipmap/uploadadv_titleicon"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/uploadadv_adv_title"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top"
+                            android:text="*"
+                            android:textColor="@color/colorRedLoginNormal" />
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+
+                    <EditText
+                        android:id="@+id/et_adv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorWhite"
+                        android:hint="@string/uploadadv_hint_adv_title"
+                        android:maxLength="36"
+                        android:padding="5dp"
+                        android:textColor="@color/colorLoginforgetPassword"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@mipmap/uploadadv_titleicon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/uploadadv_adv_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View style="@style/linegray" />
+
+                    <EditText
+                        android:id="@+id/et_adv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:gravity="top"
+                        android:hint="@string/uploadadv_hint_adv_content"
+                        android:maxLength="200"
+                        android:minHeight="80dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorLoginforgetPassword"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@mipmap/uploadadv_titleicon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/uploadadv_adv_phone"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View style="@style/linegray" />
+
+                    <EditText
+                        android:id="@+id/et_adv_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorWhite"
+                        android:hint="@string/uploadadv_hint_adv_phone"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLoginforgetPassword"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@mipmap/uploadadv_titleicon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/uploadadv_adv_link"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View style="@style/linegray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/uploadadv_adv_link_name"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp11" />
+
+                        <EditText
+                            android:id="@+id/et_adv_link_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/uploadadv_hint_adv_link_name"
+                            android:maxLength="4"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textColorHint="@color/colorLoginAgreement"
+                            android:textSize="@dimen/sp11" />
+
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/uploadadv_adv_address"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp11" />
+
+                        <EditText
+                            android:id="@+id/et_adv_link"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/uploadadv_hint_adv_link"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textColorHint="@color/colorLoginAgreement"
+                            android:textSize="@dimen/sp11" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_adv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/selector_white_back"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="14dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/uploadadv_addaddress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:text="@string/uploadadv_adv_address"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp_15" />
+
+                    <EditText
+                        android:id="@+id/et_adv_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:hint="@string/uploadadv_hint_adv_address_input"
+                        android:singleLine="true"
+                        android:textColor="@color/colorLoginforgetPassword"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp11"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_adv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/uploadadv_next"
+                        android:hint="@string/uploadadv_hint_adv_address"
+                        android:textColor="@color/color_reset"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/uploadadv_all_Required"
+                    android:textColor="@color/colorRedLoginNormal"
+                    android:textSize="@dimen/sp11" />
+
+
+                <Button
+                    android:id="@+id/button_adv_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="78dp"
+                    android:layout_marginRight="78dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/selector_button_red_round"
+                    android:text="@string/uploadadv_next"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_20" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

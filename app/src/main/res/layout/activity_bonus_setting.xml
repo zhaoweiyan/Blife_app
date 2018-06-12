@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_backround"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_topbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp5" />
+                <!--投放人群-->
+                <LinearLayout
+                    android:id="@+id/lin_bonus_sendmen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_back"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/uploadadv_sendmen"
+                        android:drawablePadding="5dp"
+                        android:text="@string/uploadadv_bonus_sendmen"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/uploadadv_next"
+                        android:text="@string/uploadadv_sendmen_hint"
+                        android:textColor="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp_11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp5" />
+                <!--投放目标-->
+                <LinearLayout
+                    android:id="@+id/lin_bonus_sendtarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_white_back"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/uploadadv_sendtarget"
+                        android:drawablePadding="5dp"
+                        android:text="@string/uploadadv_bonus_sendtarget"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_sendtarget_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/uploadadv_next"
+                        android:gravity="right"
+                        android:hint="@string/uploadadv_sendtarget_hint"
+                        android:textColor="@color/colorRedLoginNormal"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp_11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp5" />
+                <!--投放时间-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@mipmap/uploadadv_sendtimeicon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/uploadadv_bonus_sendtime"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View style="@style/linegray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_sendstarttime"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/color_main_backround" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_sendendtime"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_bonus_starttime"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_white_back"
+                            android:gravity="center"
+                            android:hint="@string/uploadadv_bonus_sendtime_hint"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textColorHint="@color/colorLoginAgreement"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@color/color_main_backround" />
+
+                        <TextView
+                            android:id="@+id/tv_bonus_endtime"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_white_back"
+                            android:gravity="center"
+                            android:hint="@string/uploadadv_bonus_sendtime_hint"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textColorHint="@color/colorLoginAgreement"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp5" />
+                <!--派发人数-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@mipmap/uploadadv_titleicon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/uploadadv_bonus_sendmennum"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View style="@style/linegray" />
+
+                    <EditText
+                        android:id="@+id/et_bonus_sendmennum"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorWhite"
+                        android:gravity="center"
+                        android:hint="@string/uploadadv_bonus_sendmennum_hint"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/colorRedLoginNormal"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp_11" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp5" />
+
+                <!--红包设置-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:drawableLeft="@mipmap/uploadadv_titleicon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/uploadadv_bonus_bonus_setting"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <View style="@style/linegray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_prize"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/color_main_backround" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_men"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/color_main_backround" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_money"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+                    <!--一等奖-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_firstprize"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_main_backround" />
+
+                        <EditText
+                            android:id="@+id/et_bonus_firstmen"
+                            style="@style/BonusMenEdittext" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_main_backround" />
+
+                        <EditText
+                            android:id="@+id/et_bonus_firstmoney"
+                            style="@style/BonusMoneyEdittext" />
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+                    <!--二等奖-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_twoprize"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_main_backround" />
+
+                        <EditText
+                            android:id="@+id/et_bonus_twomen"
+                            style="@style/BonusMenEdittext" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_main_backround" />
+
+                        <EditText
+                            android:id="@+id/et_bonus_twomoney"
+                            style="@style/BonusMoneyEdittext" />
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+                    <!--三等奖-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_threeprize"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_main_backround" />
+
+                        <EditText
+                            android:id="@+id/et_bonus_threemen"
+                            style="@style/BonusMenEdittext" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_main_backround" />
+
+                        <EditText
+                            android:id="@+id/et_bonus_threemoney"
+                            style="@style/BonusMoneyEdittext" />
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+                    <!--随机奖-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_randomprize"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@color/color_main_backround" />
+
+                        <TextView
+                            android:id="@+id/tv_bonus_randommen"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_randommen_hint"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="25dp"
+                            android:layout_gravity="top"
+                            android:background="@color/color_main_backround" />
+
+                        <TextView
+                            android:id="@+id/tv_bonus_randommoney"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+                            android:gravity="center"
+                            android:text="@string/uploadadv_bonus_randommoney_hint"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textSize="@dimen/sp_11" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View style="@style/linegray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/framelayout_bonus_preview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_white_back">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/uploadadv_preview" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/uploadadv_bonus_preview"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_12" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_bonus_savedraft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_f8736f"
+                android:gravity="center"
+                android:text="@string/uploadadv_bonus_savedraft"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_bonus_submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorRedLoginNormal"
+                android:gravity="center"
+                android:text="@string/uploadadv_bonus_submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

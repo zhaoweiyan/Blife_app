@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_backround"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_topbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/framelayout_bonus_turnimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner_empty" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp">
+
+                    <TextView
+                        android:id="@+id/tv_bonus_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/tv_bonus_businessname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:drawableLeft="@mipmap/bonus_company_icon"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_11" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_bonus_report"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/bonus_report"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="@string/bonus_report"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp_11" />
+
+                        <TextView
+                            android:id="@+id/tv_bonus_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="56dp"
+                            android:drawableLeft="@mipmap/bonus_company_icon"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="@string/bonus_share"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp_11" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="13dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/bonus_title_icon"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="@string/adv_detail"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1px"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:id="@+id/lin_bonus_pulldown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="5dp"
+                                android:gravity="center|right"
+                                android:text="@string/adv_pulldown"
+                                android:textColor="@color/color_fea000"
+                                android:textSize="@dimen/sp_11" />
+
+                            <ImageView
+                                android:id="@+id/iv_pulldown"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/icon_down" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/linegray" />
+
+
+                    <TextView
+                        android:id="@+id/tv_bonus_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:paddingBottom="10dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:paddingBottom="33dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="19dp">
+
+                    <Button
+                        android:id="@+id/button_grab"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_round_red"
+                        android:gravity="center"
+                        android:text="@string/bonus_grab"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp_20" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View style="@style/linegray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bonus_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/bonus_phone"
+                android:gravity="center"
+                android:text="@string/bonus_phone"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_10" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_bonus_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/bonus_location"
+                android:gravity="center|right"
+                android:text="@string/bonus_location"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bonus_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/bonus_link"
+        android:gravity="center"
+        android:text="@string/bonus_link"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_10" />
+
+</FrameLayout>

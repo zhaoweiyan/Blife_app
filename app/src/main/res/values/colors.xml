@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorRedLoginNormal">#db413c</color>
+    <color name="colorRedLoginPressed">#cc0e11</color>
+    <color name="colorLoginShape">#d9d9d9</color>
+    <color name="colorLoginAgreement">#999999</color>
+    <color name="colorLoginforgetPassword">#666666</color>
+    <color name="colorgray">#dddddd</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colortransparent">#00ffffff</color>
+    <color name="colorphone">#d9d9d9</color>
+    <color name="color_common">#db413c</color>
+    <color name="color_main_backround">#eeeeee</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="color_btvercode_press">#cc0e11</color>
+    <color name="color_user_agreement">#999999</color>
+    <color name="color_reset">#333333</color>
+    <color name="color_line">#e4e4e3</color>
+    <color name="color_f8736f">#f8736f</color>
+    <color name="colorbuttonlin">#cecece</color>
+    <color name="color_fea000">#fea000</color>
+    <color name="color_9a9a9a">#9a9a9a</color>
+    <color name="color_fbd344">#fbd344</color>
+    <color name="color_fe3c36">#fe3c36</color>
+    <color name="color_fbfd35">#fbfd35</color>
+    <color name="color_43adac">#43adac</color>
+    <color name="color_d5d3d3">#d5d3d3</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_ffea01">#ffea01</color>
+    <color name="color_ddde8f">#ddde8f</color>
+    <!--半透明色&背景色-->
+    <color name="colortransback">#bb000000</color>
+    <color name="coloralpha">#66000000</color>
+    <color name="colortrans">#00000000</color>
+    <color name="color_speaker">#ff3b65</color>
+    <color name="colorWhiteAlpha">#55ffffff</color>
+
+
+    <color name="coloredithintnormal">#cccccc</color>
+    <color name="colorblack">#000000</color>
+
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="color_getOk">#fea000</color>
+    <color name="colorpubname">#66ccce</color>
+    <color name="colorrefund">#fea4a4</color>
+    <color name="colortext">#fffefe</color>
+    <color name="colorPass">#fdef02</color>
+    <color name="color_withdraw">#fd5353</color>
+    <color name="color_fea000_press">#ee9601</color>
+    <color name="color_pay_background">#fceaea</color>
+    <color name="colorexpense">#eb6564</color>
+    <color name="color_fddfde">#fddfde</color>
+    <color name="color_66c6c6c6">#66c6c6c6</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_c6c6c6">#eec6c6c6</color>
+    <color name="color_fcb5b3">#fcb5b3</color>
+    <color name="color_cc0d12">#cc0d12</color>
+</resources>

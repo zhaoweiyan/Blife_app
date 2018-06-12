@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedLoginNormal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/colorwhite"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/identify_tv_citizen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_identify_citizen_check"
+                android:gravity="center"
+                android:text="@string/me_citizen_identify"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/identify_tv_company"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_identify_company_uncheck"
+                android:gravity="center"
+                android:text="@string/me_company_identify"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_main_backround">
+
+            <FrameLayout
+                android:id="@+id/identify_fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

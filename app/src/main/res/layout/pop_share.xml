@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shape_white_rounde"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_share_timeline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@mipmap/share_wxcircle"
+                android:gravity="center"
+                android:text="@string/share_timeline"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_share_wechat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@mipmap/share_wechat"
+                android:gravity="center"
+                android:text="@string/share_wechat"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_share_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@mipmap/share_qq"
+                android:gravity="center"
+                android:text="@string/share_qq"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_share_qzone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@mipmap/share_qzone"
+                android:gravity="center"
+                android:text="@string/share_qzone"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_share_sine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="13dp"
+                android:drawableTop="@mipmap/share_sina"
+                android:gravity="center"
+                android:text="@string/share_sina"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_share_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="37dp"
+            android:src="@mipmap/share_cancel" />
+
+    </LinearLayout>
+
+</FrameLayout>

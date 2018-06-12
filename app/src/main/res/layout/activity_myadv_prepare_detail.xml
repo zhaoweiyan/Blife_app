@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedLoginNormal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorwhite"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/includ_myadv" />
+
+                <LinearLayout
+                    android:id="@+id/lin_get_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_main_backround"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/colorwhite"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp12"
+                        android:paddingLeft="@dimen/dp16"
+                        android:paddingRight="@dimen/dp14"
+                        android:paddingTop="@dimen/dp12">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/icon_tag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_send_result"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/dp15" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_get_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_myadv_textview"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10"
+                            android:text="@string/adv_look_detail"
+                            android:textSize="@dimen/sp11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorwhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp14"
+                        android:paddingRight="@dimen/dp14"
+                        android:paddingTop="@dimen/dp13">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_get_number"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/tv_bouns_total_get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_person_number"
+                            android:textColor="@color/color_getOk"
+                            android:textSize="@dimen/sp_17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_person"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorwhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp14"
+                        android:paddingRight="@dimen/dp14"
+                        android:paddingTop="@dimen/dp13"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_get_money"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/tv_bouns_accept_acount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:text="10"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textSize="@dimen/sp_17" />
+
+                        <TextView
+                            android:id="@+id/tv_bouns_total_acount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="/20"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textSize="@dimen/sp_17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_account"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_remain_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_main_backround"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/colorwhite"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp12"
+                        android:paddingLeft="@dimen/dp16"
+                        android:paddingRight="@dimen/dp14"
+                        android:paddingTop="@dimen/dp12">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/icon_tag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_remain_money"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/dp15" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/adv_handle_explain"
+                            android:textColor="@color/colorpubname"
+                            android:textSize="@dimen/sp11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorwhite"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp14"
+                        android:paddingRight="@dimen/dp14"
+                        android:paddingTop="@dimen/dp13">
+
+                        <TextView
+                            android:id="@+id/tv_refund_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_quit_person"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/tv_bouns_quit_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color_getOk"
+                            android:textSize="@dimen/sp_17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_person"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_refund_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_quit_money"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/tv_bouns_quit_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:gravity="center_vertical"
+                            android:text="@string/adv_quitmoney_value"
+                            android:textColor="@color/colorRedLoginNormal"
+                            android:textSize="@dimen/sp_17" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lin_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70"
+                    android:background="@color/color_main_backround" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lin_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_gravity="bottom"
+            android:background="@color/colorwhite"
+            android:paddingBottom="@dimen/dp7"
+            android:paddingLeft="@dimen/dp77"
+            android:paddingRight="@dimen/dp77"
+            android:paddingTop="@dimen/dp7">
+            <TextView
+                android:id="@+id/tv_send_myadv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_button_red_round"
+                android:gravity="center"
+                android:text="@string/adv_sendav"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

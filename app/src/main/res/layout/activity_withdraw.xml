@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedLoginNormal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <LinearLayout
+        android:id="@+id/withdraw_lin_identify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp61"
+            android:background="@mipmap/balance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="center_horizontal"
+            android:text="@string/balance"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/withdraw_tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp21"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_40" />
+
+        <RelativeLayout
+            android:id="@+id/withdraw_rl_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp34"
+            android:layout_marginRight="@dimen/dp34"
+            android:layout_marginTop="@dimen/dp54"
+            android:background="@drawable/selector_shape5_yellow">
+
+            <TextView
+                android:id="@+id/withdraw_tv_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11"
+                android:text="支付宝提现"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/sp_20" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp4"
+                android:layout_toLeftOf="@+id/withdraw_tv_alipay"
+                android:background="@mipmap/alipay" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/withdraw_rl_wxpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp34"
+            android:layout_marginRight="@dimen/dp34"
+            android:layout_marginTop="@dimen/dp12"
+            android:background="@drawable/selector_shape5_gray">
+
+            <TextView
+                android:id="@+id/withdraw_tv_wxpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11"
+                android:text="微信提现"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_20" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp4"
+                android:layout_toLeftOf="@+id/withdraw_tv_wxpay"
+                android:background="@mipmap/wx" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="@string/question"-->
+        <!--android:textColor="@color/color_reset"-->
+        <!--android:textSize="@dimen/sp11" />-->
+
+        <TextView
+            android:id="@+id/withdarw_tv_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp7"
+            android:textColor="@color/color_user_agreement"
+            android:textSize="@dimen/sp11" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/withdraw_lin_no_iddentify"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorwhite"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone">-->
+        <!--<include layout="@layout/no_indentify" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_write5"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.blife.blife_app.index.view.KeyWordsImageView
+                android:id="@+id/keywordsview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/dialog_cancel" />
+
+            <TextView
+                android:id="@+id/tv_superbonus_dialog_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_superbonus_keywords_refresh"
+                android:drawableLeft="@mipmap/superbonus_refresh"
+                android:drawablePadding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/superbonus_refresh"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_13" />
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_superbonus_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="@string/superbonus_dialogkeywords_hint"
+            android:textColor="@color/colorLoginAgreement"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone" />
+
+        <com.blife.blife_app.index.view.KeyWordEditLayout
+            android:id="@+id/keywordlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_superbonus_dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/dialog_cancle"
+                android:textColor="@color/colorLoginAgreement"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_superbonus_dialog_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_confim"
+                android:textColor="@color/colorRedLoginNormal"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

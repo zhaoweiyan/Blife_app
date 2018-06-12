@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/pulltorefresh_refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.blife.blife_app.tools.pulltorefresh.baseview.PullableRecyclerView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:divider="@color/colorwhite"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never" />
+
+    <include layout="@layout/pulltorefresh_load_more" />
+
+</merge>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/company_tv_identify_fail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp9"
+        android:text="@string/identify_company_explain"
+        android:textColor="@color/colorRedLoginNormal"
+        android:textSize="@dimen/sp_10"
+        android:visibility="gone" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginLeft="@dimen/dp10"-->
+    <!--android:layout_marginRight="@dimen/dp10"-->
+    <!--android:layout_marginTop="@dimen/dp9"-->
+    <!--android:background="@color/color_main_backround" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp60"
+            android:gravity="center_vertical"
+            android:text="@string/identify_company_name"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/identify_et_realName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginLeft="@dimen/dp7"
+            android:background="@null"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:maxLength="6"
+            android:hint="@string/identify_company_realname"
+            android:textColor="@color/color_reset"
+            android:textColorHint="@color/colorLoginAgreement"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_main_backround" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp60"
+            android:gravity="center_vertical"
+            android:text="@string/identify_company_card"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/identify_et_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginLeft="@dimen/dp7"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:hint="@string/identify_company_card_input"
+            android:textColorHint="@color/colorLoginAgreement"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/color_main_backround" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp11"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/identify_citizen_photo"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp14"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/identify_fl_face"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp110">
+
+                <ImageView
+                    android:id="@+id/identify_iv_face"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/camera_background"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/identify_tv_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/camera_card"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/identify_fl_inverse"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp110"
+                android:layout_marginTop="@dimen/dp12">
+
+                <ImageView
+                    android:id="@+id/identify_iv_inverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/camera_background"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/identify_tv_inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/camera_card"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp17"
+        android:background="@color/color_main_backround"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/me_warning" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/identify_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identify_warining"
+                    android:textColor="@color/colorLoginAgreement"
+                    android:textSize="@dimen/sp_11" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp9"
+                    android:text="@string/identify_citizen_explain"
+                    android:textColor="@color/color_fea000"
+                    android:textSize="@dimen/sp_11" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/identify_tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginBottom="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp65"
+            android:layout_marginRight="@dimen/dp65"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@drawable/shape_myadv_send_defalut"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/infoCommit"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+</LinearLayout>

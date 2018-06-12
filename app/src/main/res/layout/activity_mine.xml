@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedLoginNormal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_backround">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp38"
+                android:paddingTop="@dimen/dp44">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/me_header"
+                    android:textColor="@color/color_user_agreement"
+                    android:textSize="@dimen/sp_13" />
+
+                <FrameLayout
+                    android:id="@+id/mecenter_fl_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.blife.blife_app.tools.view.CircleImageView
+                        android:id="@+id/mecenter_iv_header"
+                        android:layout_width="@dimen/dp82"
+                        android:layout_height="@dimen/dp82"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dp6"
+                        android:layout_marginTop="@dimen/dp11"
+                        android:src="@mipmap/defalut_icon"
+                        app:border_color="@color/colorgray"
+                        app:border_width="1px" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:background="@mipmap/me_camera_check" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/colorwhite"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mecenter_lin_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/me_nickname"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/mecenter_et_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入昵称"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textColor="@color/color_getOk"
+                        android:textColorHint="@color/colorLoginAgreement"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:id="@+id/mecenter_lin_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/me_sex"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioGroup
+                        android:id="@+id/mecenter_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/mecenter_rb_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_me_sex"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/selector_me_sex"
+                            android:paddingLeft="@dimen/dp8"
+                            android:text="男"
+                            android:textColor="@color/color_fea000"
+                            android:textSize="@dimen/sp_15" />
+
+                        <RadioButton
+                            android:id="@+id/mecenter_rb_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:button="@drawable/selector_me_sex"
+                            android:paddingLeft="@dimen/dp8"
+                            android:text="女"
+                            android:textColor="@color/color_user_agreement"
+                            android:textSize="@dimen/sp_15" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:id="@+id/mecenter_lin_birtday"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:background="@drawable/selector_button_write_noshape"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/me_birthday"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/mecenter_tv_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1990-10-10"
+                        android:textColor="@color/color_user_agreement"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/colorwhite"
+                android:orientation="vertical"
+              >
+
+                <LinearLayout
+                    android:id="@+id/mecenter_lin_resetpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/selector_button_write_noshape"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reset_pwd"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/me_look_icon" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:id="@+id/mecenter_lin_identify"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/selector_button_write_noshape"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/me_pass"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/meceter_tv_identify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/me_look_icon"
+                        android:text="@string/me_no_pass"
+                        android:textColor="@color/color_user_agreement"
+                        android:textSize="@dimen/sp_13" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:id="@+id/mecenter_lin_quit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:background="@drawable/selector_button_write_noshape"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/me_quit"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.blife.blife_app"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 20
+        versionName "2.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.6.1.jar')
+    compile files('libs/okhttp-3.4.1.jar')
+    compile files('libs/okio-1.9.0.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/zixing-core-3.2.0.jar')
+    compile files('libs/locSDK_6.23.jar')
+    compile files('libs/jpush-android-2.1.5.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile files('libs/baidumapapi_base_v4_0_0.jar')
+    compile files('libs/baidumapapi_cloud_v4_0_0.jar')
+    compile files('libs/baidumapapi_map_v4_0_0.jar')
+    compile files('libs/baidumapapi_radar_v4_0_0.jar')
+    compile files('libs/baidumapapi_search_v4_0_0.jar')
+    compile files('libs/baidumapapi_util_v4_0_0.jar')
+    compile files('libs/umeng-analytics-v6.0.0.jar')
+    compile files('libs/alipaySingle-20160516.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5756.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/SocialSDK_WeChat_1.jar')
+    compile files('libs/SocialSDK_WeChat_2.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+}

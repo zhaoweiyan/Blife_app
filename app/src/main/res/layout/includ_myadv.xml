@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:layout_marginTop="@dimen/dp15"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dp7"
+                android:maxLines="2"
+                android:text="@string/advdetail_title"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:layout_marginTop="@dimen/dp19"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_adv_detail_pubname"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_pubname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/pubname"
+                    android:textColor="@color/colorpubname"
+                    android:textSize="@dimen/dp13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/color_main_backround" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp14"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp16">
+
+                <ImageView
+                    android:id="@+id/iv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:background="@mipmap/icon_tag" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_toRightOf="@+id/iv_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_detail"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/dp15" />
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+                <RelativeLayout
+                    android:id="@+id/rl_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_detail"
+                    android:paddingBottom="@dimen/dp12"
+                    android:paddingTop="@dimen/dp12">
+
+                    <ImageView
+                        android:id="@+id/iv_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:background="@mipmap/icon_down" />
+
+                    <TextView
+                        android:id="@+id/tv_look"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_down"
+                        android:text="@string/adv_pulldown"
+                        android:textColor="@color/color_getOk"
+                        android:textSize="@dimen/sp_10" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray" />
+
+            <TextView
+                android:id="@+id/tv_description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dp7"
+                android:maxLines="4"
+                android:paddingBottom="@dimen/dp20"
+                android:paddingLeft="@dimen/dp14"
+                android:paddingRight="@dimen/dp14"
+                android:paddingTop="@dimen/dp20"
+                android:text="@string/adv_detail_explain"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/tv_description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dp7"
+                android:paddingBottom="@dimen/dp20"
+                android:paddingLeft="@dimen/dp14"
+                android:paddingRight="@dimen/dp14"
+                android:paddingTop="@dimen/dp20"
+                android:text="@string/adv_detail_explain"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_13"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:background="@color/color_main_backround" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp14"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingTop="@dimen/dp12">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/icon_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_info"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:id="@+id/lin_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_link"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_link_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:background="@drawable/shape_myadv_textview"
+                    android:maxLength="4"
+                    android:padding="@dimen/dp2"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/dp11" />
+
+                <TextView
+                    android:id="@+id/tv_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:singleLine="true"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_address"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_link_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:paddingBottom="@dimen/dp11"
+                    android:paddingTop="@dimen/dp11"
+                    android:singleLine="true"
+                    android:text="@string/adv_link_address"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_phone"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_link_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:singleLine="true"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:background="@color/color_main_backround" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp14"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingTop="@dimen/dp12">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/icon_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_put"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_time"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:text="@string/creattime"
+                    android:textColor="@color/colorpubname"
+                    android:textSize="@dimen/dp11" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:text="@string/adv_come"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:text="@string/creattime"
+                    android:textColor="@color/colorpubname"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_range"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_1_range_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv1"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_2_range_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_range"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_2_range_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv2"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:text="@string/adv_link_address"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/colorgray"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_3_range_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp11"
+                android:paddingTop="@dimen/dp11"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adv_range"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_3_range_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv3"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_toRightOf="@+id/tv3"
+                    android:text="@string/adv_link_address"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:background="@color/color_main_backround" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp14"
+                android:paddingTop="@dimen/dp12">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/icon_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:gravity="center_vertical"
+                    android:text="@string/bonus_set"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/prize"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/adv_prize"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_number"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_money"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                    <LinearLayout
+                        android:id="@+id/prize1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_set_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize1_num"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_number_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize1_account"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_money_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                    <LinearLayout
+                        android:id="@+id/zero3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_set_two"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize2_num"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_number_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize2_account"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_money_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                    <LinearLayout
+                        android:id="@+id/zero4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_set_three"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize3_num"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_number_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize3_account"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_money_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/colorgray" />
+
+                    <LinearLayout
+                        android:id="@+id/zero"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_set_random"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize4_num"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_number_one"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/dp35"
+                            android:background="@color/colorgray" />
+
+                        <TextView
+                            android:id="@+id/tv_prize4_account"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/bonus_account_random"
+                            android:textColor="@color/colorLoginforgetPassword"
+                            android:textSize="@dimen/sp_11" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorwhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp13"
+                android:paddingLeft="@dimen/dp14"
+                android:paddingRight="@dimen/dp14"
+                android:paddingTop="@dimen/dp13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_put_number"
+                    android:textColor="@color/colorLoginforgetPassword"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_bouns_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_put_number_value"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_put_number_all"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_bonus_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_put_all_value"
+                    android:textColor="@color/colorRedLoginNormal"
+                    android:textSize="@dimen/sp_17" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorwhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp13"
+                android:paddingLeft="@dimen/dp14"
+                android:paddingRight="@dimen/dp14"
+                android:paddingTop="@dimen/dp13">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_service_money"
+                    android:textColor="@color/color_reset"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_bonus_service_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="@string/adv_put_all_value"
+                    android:textColor="@color/colorRedLoginNormal"
+                    android:textSize="@dimen/sp_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedLoginNormal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_backround">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_write5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_pay_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:background="@mipmap/alipay_circle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment_alipay"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:text="@string/payment_alipay_praise"
+                            android:textColor="@color/color_user_agreement"
+                            android:textSize="@dimen/sp11" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:gravity="center_vertical"
+                        android:text="@string/name"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <EditText
+                        android:id="@+id/alipay_et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:background="@null"
+                        android:hint="@string/input_alipay_realName"
+                        android:maxLength="6"
+                        android:textColor="@color/color_reset"
+                        android:textColorHint="@color/color_user_agreement"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:gravity="center_vertical"
+                        android:text="@string/account"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <EditText
+                        android:id="@+id/alipay_et_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:background="@null"
+                        android:hint="@string/input_alipay_account"
+                        android:textColor="@color/color_reset"
+                        android:textColorHint="@color/color_user_agreement"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:gravity="center_vertical"
+                        android:text="@string/amount"
+                        android:textColor="@color/color_reset"
+                        android:textSize="@dimen/sp_15" />
+
+                    <EditText
+                        android:id="@+id/alipay_et_balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp14"
+                        android:background="@null"
+                        android:hint="可提现金额"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/color_reset"
+                        android:textColorHint="@color/color_user_agreement"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/color_main_backround" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="可提现次数"-->
+                    <!--android:textColor="@color/color_user_agreement"-->
+                    <!--android:textSize="@dimen/sp_10" />-->
+
+                    <TextView
+                        android:id="@+id/alipay_tv_withdraw_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:text="1"
+                        android:textColor="@color/color_user_agreement"
+                        android:textSize="@dimen/sp_10" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginRight="@dimen/dp10"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="次"-->
+                    <!--android:textColor="@color/color_user_agreement"-->
+                    <!--android:textSize="@dimen/sp_10" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginLeft="@dimen/dp78"
+                android:layout_marginRight="@dimen/dp78"
+                android:layout_marginTop="@dimen/dp25">
+
+                <TextView
+                    android:id="@+id/alipay_tv_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_myadv_send_defalut"
+                    android:gravity="center"
+                    android:text="@string/infoCommit"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/sp_20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginRight="@dimen/dp14"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@color/color_main_backround"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:text="@string/withdrawexplain"
+                    android:textColor="@color/color_user_agreement"
+                    android:textSize="@dimen/sp_11" />
+
+                <com.blife.blife_app.tools.pulltorefresh.pulltorefreshview.PullToRefreshRecyclerView
+                    android:id="@+id/refresh_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_main_backround" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

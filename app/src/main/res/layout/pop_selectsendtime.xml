@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <View style="@style/linegray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/uploadadv_bonus_sendtime"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_18" />
+
+        <View style="@style/linegray" />
+
+        <com.blife.blife_app.tools.view.YHPickerView
+            android:id="@+id/pickview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <Button
+            android:id="@+id/btn_selecttime"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/login_button"
+            android:text="@string/commit"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</FrameLayout>

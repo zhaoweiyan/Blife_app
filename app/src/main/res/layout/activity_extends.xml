@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedLoginNormal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_topbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_main_backround" />
+
+    <ScrollView
+        android:id="@+id/scroll_identify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp32"
+                android:layout_marginTop="@dimen/dp72">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/top_shape_5"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp117"
+                        android:paddingTop="@dimen/dp26">
+
+                        <com.blife.blife_app.tools.view.CircleImageView
+                            android:id="@+id/extends_iv_header"
+                            android:layout_width="@dimen/dp68"
+                            android:layout_height="@dimen/dp68"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/defalut_icon"
+                            app:border_color="@color/color_main_backround"
+                            app:border_width="1px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:text="@string/scan"
+                            android:textColor="@color/color_reset"
+                            android:textSize="@dimen/sp20" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp14"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="加入"
+                                android:textColor="@color/color_reset"
+                                android:textSize="@dimen/sp13" />
+
+                            <TextView
+                                android:id="@+id/extends_tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="爱新觉罗达"
+                                android:textColor="@color/colorRedLoginNormal"
+                                android:textSize="@dimen/sp13" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="的team"
+                                android:textColor="@color/color_reset"
+                                android:textSize="@dimen/sp13" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_bottom_5"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp32"
+                        android:paddingTop="@dimen/dp82">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="@dimen/dp51"
+                                android:layout_height="1px"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/dp9"
+                                android:background="@color/color_main_backround"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/blife_support"
+                                android:textColor="@color/color_user_agreement"
+                                android:textSize="@dimen/sp_10" />
+
+                            <TextView
+                                android:layout_width="@dimen/dp51"
+                                android:layout_height="1px"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp9"
+                                android:background="@color/color_main_backround"
+                                android:gravity="center" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/extends_iv_scan"
+                    android:layout_width="@dimen/dp136"
+                    android:layout_height="@dimen/dp136"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="@dimen/dp72"
+                    android:background="@mipmap/defalut_icon"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/withdraw_lin_no_iddentify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/no_indentify" />
+    </LinearLayout>
+</LinearLayout>

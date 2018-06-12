@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_already_participate"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_button_write_noshape"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <FrameLayout
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:foreground="@mipmap/bonus_already_participate"
+            android:foregroundGravity="center_horizontal|bottom">
+
+            <com.blife.blife_app.tools.view.RoundImageView
+                android:id="@+id/iv_alreadyparticipate"
+                android:layout_width="70dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/bonus_empty_icon"
+                app:radius="3dp"
+                app:type="round" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alreadyparticipate_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_reset"
+                android:textSize="@dimen/sp_15" />
+
+
+            <TextView
+                android:id="@+id/tv_alreadyparticipate_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorLoginAgreement"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_alreadyparticipate_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_fe3c36"
+                android:textSize="@dimen/sp_11" />
+
+            <TextView
+                android:id="@+id/tv_alreadyparticipate_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorLoginAgreement"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/linegray" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BackgroundTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_topbar" />
+
+
+        <ImageView
+            android:id="@+id/iv_pay_result_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/tv_pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_reset"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pay_result_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorLoginAgreement"
+            android:textSize="@dimen/sp_11" />
+
+        <Button
+            android:id="@+id/button_pay_success_share"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shaper_red_white"
+            android:text="@string/payment_pay_success_share"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorRedLoginNormal"
+            android:textSize="@dimen/sp_15"
+            android:visibility="invisible" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_back_advlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/login_button"
+            android:text="@string/payment_pay_result_back"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_20" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
